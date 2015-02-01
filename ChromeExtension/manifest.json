@@ -15,6 +15,8 @@
   "permissions": [
     "activeTab",
     "declarativeContent",
-    "http://tab.by/"
-  ]
+    "http://tab.by/",
+    "https://*.yandex.ru/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.yandex.ru; object-src 'self'"
 }

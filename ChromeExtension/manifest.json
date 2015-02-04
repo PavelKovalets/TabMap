@@ -3,7 +3,7 @@
 
   "name": "Tab Maps",
   "description": "This extension adds functionality of Yandex.Maps service to tab.by website.",
-  "version": "1.0",
+  "version": "0.1.0.0",
 
   "background": {
     "scripts": ["background.js"],

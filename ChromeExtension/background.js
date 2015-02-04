@@ -27,6 +27,9 @@ chrome.runtime.onMessage.addListener(
         console.log(request.data);
         sendResponse({info: "Message received."});
         chrome.tabs.create({url: "YandexMaps/yandex_maps.html"}, function (tab){
-            chrome.tabs.sendMessage(tab.id, {data: request.data});
+            //TODO Hotfix
+            setTimeout(function(){
+                chrome.tabs.sendMessage(tab.id, {data: request.data});
+            }, 3000);
         });
     });
